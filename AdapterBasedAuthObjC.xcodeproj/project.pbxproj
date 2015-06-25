@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18156EDE194ED70500CDE173 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18156EDD194ED70500CDE173 /* Foundation.framework */; };
+		18156EE0194ED70500CDE173 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18156EDF194ED70500CDE173 /* CoreGraphics.framework */; };
+		18156EE2194ED70500CDE173 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18156EE1194ED70500CDE173 /* UIKit.framework */; };
+		18156EE8194ED70500CDE173 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18156EE6194ED70500CDE173 /* InfoPlist.strings */; };
+		18156EEA194ED70500CDE173 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18156EE9194ED70500CDE173 /* main.m */; };
+		18156EEE194ED70500CDE173 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18156EED194ED70500CDE173 /* AppDelegate.m */; };
+		18156EF1194ED70500CDE173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18156EEF194ED70500CDE173 /* Main.storyboard */; };
+		18156EF4194ED70500CDE173 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18156EF3194ED70500CDE173 /* ViewController.m */; };
+		18156EF6194ED70500CDE173 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18156EF5194ED70500CDE173 /* Images.xcassets */; };
+		18156F17194ED7A500CDE173 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18156F16194ED7A500CDE173 /* SystemConfiguration.framework */; };
+		18156F19194ED7AA00CDE173 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18156F18194ED7AA00CDE173 /* MobileCoreServices.framework */; };
+		18156F1B194ED7AF00CDE173 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18156F1A194ED7AF00CDE173 /* CoreData.framework */; };
+		18156F1D194ED7B400CDE173 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18156F1C194ED7B400CDE173 /* CoreLocation.framework */; };
+		18156F1F194ED7C300CDE173 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18156F1E194ED7C300CDE173 /* Security.framework */; };
+		18156F23194ED7DE00CDE173 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18156F22194ED7DE00CDE173 /* libstdc++.6.dylib */; };
+		18156F25194ED7E500CDE173 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18156F24194ED7E500CDE173 /* libz.dylib */; };
+		18156F30194EDAE000CDE173 /* MyConnectListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 18156F27194EDAE000CDE173 /* MyConnectListener.m */; };
+		18156F32194EDAE000CDE173 /* MyChallengeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 18156F2B194EDAE000CDE173 /* MyChallengeHandler.m */; };
+		18156F33194EDAE000CDE173 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18156F2D194EDAE000CDE173 /* LoginViewController.m */; };
+		18156F34194EDAE000CDE173 /* MyLogoutListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 18156F2F194EDAE000CDE173 /* MyLogoutListener.m */; };
+		198D7A401AF78B2D0098EB36 /* WorklightAPI in Resources */ = {isa = PBXBuildFile; fileRef = 198D7A3F1AF78B2D0098EB36 /* WorklightAPI */; };
+		198D7A411AF78B430098EB36 /* sqlcipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18156F20194ED7D300CDE173 /* sqlcipher.framework */; };
+		198D7A431AF78B440098EB36 /* IBMMobileFirstPlatformFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198D7A421AF78B440098EB36 /* IBMMobileFirstPlatformFoundation.framework */; };
+		198D7A451AF78B560098EB36 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 198D7A441AF78B560098EB36 /* libc++.dylib */; };
+		821602291AED1C2200CA8B6E /* worklight.plist in Resources */ = {isa = PBXBuildFile; fileRef = 821602271AED1C2200CA8B6E /* worklight.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18156EDA194ED70500CDE173 /* AdapterBasedAuthObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdapterBasedAuthObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18156EDD194ED70500CDE173 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18156EDF194ED70500CDE173 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		18156EE1194ED70500CDE173 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		18156EE5194ED70500CDE173 /* AdapterBasedAuthObjC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AdapterBasedAuthObjC-Info.plist"; sourceTree = "<group>"; };
+		18156EE7194ED70500CDE173 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18156EE9194ED70500CDE173 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18156EEB194ED70500CDE173 /* AdapterBasedAuthObjC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdapterBasedAuthObjC-Prefix.pch"; sourceTree = "<group>"; };
+		18156EEC194ED70500CDE173 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18156EED194ED70500CDE173 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18156EF0194ED70500CDE173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18156EF2194ED70500CDE173 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18156EF3194ED70500CDE173 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18156EF5194ED70500CDE173 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		18156F16194ED7A500CDE173 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		18156F18194ED7AA00CDE173 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		18156F1A194ED7AF00CDE173 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		18156F1C194ED7B400CDE173 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		18156F1E194ED7C300CDE173 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		18156F20194ED7D300CDE173 /* sqlcipher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = sqlcipher.framework; path = WorklightAPI/Frameworks/sqlcipher.framework; sourceTree = "<group>"; };
+		18156F22194ED7DE00CDE173 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
+		18156F24194ED7E500CDE173 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		18156F26194EDAE000CDE173 /* MyConnectListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyConnectListener.h; sourceTree = "<group>"; };
+		18156F27194EDAE000CDE173 /* MyConnectListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyConnectListener.m; sourceTree = "<group>"; };
+		18156F2A194EDAE000CDE173 /* MyChallengeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyChallengeHandler.h; sourceTree = "<group>"; };
+		18156F2B194EDAE000CDE173 /* MyChallengeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyChallengeHandler.m; sourceTree = "<group>"; };
+		18156F2C194EDAE000CDE173 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		18156F2D194EDAE000CDE173 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		18156F2E194EDAE000CDE173 /* MyLogoutListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLogoutListener.h; sourceTree = "<group>"; };
+		18156F2F194EDAE000CDE173 /* MyLogoutListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLogoutListener.m; sourceTree = "<group>"; };
+		198D7A3F1AF78B2D0098EB36 /* WorklightAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WorklightAPI; sourceTree = "<group>"; };
+		198D7A421AF78B440098EB36 /* IBMMobileFirstPlatformFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMMobileFirstPlatformFoundation.framework; path = WorklightAPI/Frameworks/IBMMobileFirstPlatformFoundation.framework; sourceTree = "<group>"; };
+		198D7A441AF78B560098EB36 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		821602271AED1C2200CA8B6E /* worklight.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = worklight.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18156ED7194ED70500CDE173 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				198D7A431AF78B440098EB36 /* IBMMobileFirstPlatformFoundation.framework in Frameworks */,
+				198D7A411AF78B430098EB36 /* sqlcipher.framework in Frameworks */,
+				198D7A451AF78B560098EB36 /* libc++.dylib in Frameworks */,
+				18156F25194ED7E500CDE173 /* libz.dylib in Frameworks */,
+				18156F23194ED7DE00CDE173 /* libstdc++.6.dylib in Frameworks */,
+				18156F1F194ED7C300CDE173 /* Security.framework in Frameworks */,
+				18156F1D194ED7B400CDE173 /* CoreLocation.framework in Frameworks */,
+				18156F1B194ED7AF00CDE173 /* CoreData.framework in Frameworks */,
+				18156F19194ED7AA00CDE173 /* MobileCoreServices.framework in Frameworks */,
+				18156F17194ED7A500CDE173 /* SystemConfiguration.framework in Frameworks */,
+				18156EE0194ED70500CDE173 /* CoreGraphics.framework in Frameworks */,
+				18156EE2194ED70500CDE173 /* UIKit.framework in Frameworks */,
+				18156EDE194ED70500CDE173 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18156ED1194ED70500CDE173 = {
+			isa = PBXGroup;
+			children = (
+				198D7A3F1AF78B2D0098EB36 /* WorklightAPI */,
+				821602271AED1C2200CA8B6E /* worklight.plist */,
+				18156EE3194ED70500CDE173 /* AdapterBasedAuthObjC */,
+				18156EDC194ED70500CDE173 /* Frameworks */,
+				18156EDB194ED70500CDE173 /* Products */,
+				197FD0B91A2370D800DCF5C6 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		18156EDB194ED70500CDE173 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18156EDA194ED70500CDE173 /* AdapterBasedAuthObjC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18156EDC194ED70500CDE173 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				198D7A441AF78B560098EB36 /* libc++.dylib */,
+				198D7A421AF78B440098EB36 /* IBMMobileFirstPlatformFoundation.framework */,
+				18156F24194ED7E500CDE173 /* libz.dylib */,
+				18156F22194ED7DE00CDE173 /* libstdc++.6.dylib */,
+				18156F20194ED7D300CDE173 /* sqlcipher.framework */,
+				18156F1E194ED7C300CDE173 /* Security.framework */,
+				18156F1C194ED7B400CDE173 /* CoreLocation.framework */,
+				18156F1A194ED7AF00CDE173 /* CoreData.framework */,
+				18156F18194ED7AA00CDE173 /* MobileCoreServices.framework */,
+				18156F16194ED7A500CDE173 /* SystemConfiguration.framework */,
+				18156EDD194ED70500CDE173 /* Foundation.framework */,
+				18156EDF194ED70500CDE173 /* CoreGraphics.framework */,
+				18156EE1194ED70500CDE173 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18156EE3194ED70500CDE173 /* AdapterBasedAuthObjC */ = {
+			isa = PBXGroup;
+			children = (
+				18156F26194EDAE000CDE173 /* MyConnectListener.h */,
+				18156F27194EDAE000CDE173 /* MyConnectListener.m */,
+				18156F2A194EDAE000CDE173 /* MyChallengeHandler.h */,
+				18156F2B194EDAE000CDE173 /* MyChallengeHandler.m */,
+				18156F2C194EDAE000CDE173 /* LoginViewController.h */,
+				18156F2D194EDAE000CDE173 /* LoginViewController.m */,
+				18156F2E194EDAE000CDE173 /* MyLogoutListener.h */,
+				18156F2F194EDAE000CDE173 /* MyLogoutListener.m */,
+				18156EEC194ED70500CDE173 /* AppDelegate.h */,
+				18156EED194ED70500CDE173 /* AppDelegate.m */,
+				18156EEF194ED70500CDE173 /* Main.storyboard */,
+				18156EF2194ED70500CDE173 /* ViewController.h */,
+				18156EF3194ED70500CDE173 /* ViewController.m */,
+				18156EF5194ED70500CDE173 /* Images.xcassets */,
+				18156EE4194ED70500CDE173 /* Supporting Files */,
+			);
+			path = AdapterBasedAuthObjC;
+			sourceTree = "<group>";
+		};
+		18156EE4194ED70500CDE173 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18156EE5194ED70500CDE173 /* AdapterBasedAuthObjC-Info.plist */,
+				18156EE6194ED70500CDE173 /* InfoPlist.strings */,
+				18156EE9194ED70500CDE173 /* main.m */,
+				18156EEB194ED70500CDE173 /* AdapterBasedAuthObjC-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		197FD0B91A2370D800DCF5C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18156ED9194ED70500CDE173 /* AdapterBasedAuthObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18156F0C194ED70500CDE173 /* Build configuration list for PBXNativeTarget "AdapterBasedAuthObjC" */;
+			buildPhases = (
+				18156ED6194ED70500CDE173 /* Sources */,
+				18156ED7194ED70500CDE173 /* Frameworks */,
+				18156ED8194ED70500CDE173 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdapterBasedAuthObjC;
+			productName = AdapterBasedAuthObjC;
+			productReference = 18156EDA194ED70500CDE173 /* AdapterBasedAuthObjC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18156ED2194ED70500CDE173 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = IBM;
+			};
+			buildConfigurationList = 18156ED5194ED70500CDE173 /* Build configuration list for PBXProject "AdapterBasedAuthObjC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18156ED1194ED70500CDE173;
+			productRefGroup = 18156EDB194ED70500CDE173 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18156ED9194ED70500CDE173 /* AdapterBasedAuthObjC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18156ED8194ED70500CDE173 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				821602291AED1C2200CA8B6E /* worklight.plist in Resources */,
+				198D7A401AF78B2D0098EB36 /* WorklightAPI in Resources */,
+				18156EF6194ED70500CDE173 /* Images.xcassets in Resources */,
+				18156EE8194ED70500CDE173 /* InfoPlist.strings in Resources */,
+				18156EF1194ED70500CDE173 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18156ED6194ED70500CDE173 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18156F30194EDAE000CDE173 /* MyConnectListener.m in Sources */,
+				18156EF4194ED70500CDE173 /* ViewController.m in Sources */,
+				18156F32194EDAE000CDE173 /* MyChallengeHandler.m in Sources */,
+				18156F34194EDAE000CDE173 /* MyLogoutListener.m in Sources */,
+				18156F33194EDAE000CDE173 /* LoginViewController.m in Sources */,
+				18156EEE194ED70500CDE173 /* AppDelegate.m in Sources */,
+				18156EEA194ED70500CDE173 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18156EE6194ED70500CDE173 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18156EE7194ED70500CDE173 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		18156EEF194ED70500CDE173 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18156EF0194ED70500CDE173 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18156F0A194ED70500CDE173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18156F0B194ED70500CDE173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18156F0D194ED70500CDE173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WorklightAPI/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AdapterBasedAuthObjC/AdapterBasedAuthObjC-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "AdapterBasedAuthObjC/AdapterBasedAuthObjC-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WorklightAPI",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		18156F0E194ED70500CDE173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WorklightAPI/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AdapterBasedAuthObjC/AdapterBasedAuthObjC-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "AdapterBasedAuthObjC/AdapterBasedAuthObjC-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WorklightAPI",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18156ED5194ED70500CDE173 /* Build configuration list for PBXProject "AdapterBasedAuthObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18156F0A194ED70500CDE173 /* Debug */,
+				18156F0B194ED70500CDE173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18156F0C194ED70500CDE173 /* Build configuration list for PBXNativeTarget "AdapterBasedAuthObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18156F0D194ED70500CDE173 /* Debug */,
+				18156F0E194ED70500CDE173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18156ED2194ED70500CDE173 /* Project object */;
+}
