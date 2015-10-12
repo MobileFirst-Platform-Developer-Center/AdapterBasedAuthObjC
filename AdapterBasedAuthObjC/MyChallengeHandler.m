@@ -27,30 +27,38 @@
 
 -(BOOL) isCustomResponse:(WLResponse *)response {
     if(response && response.responseJSON){
-        if ([response.responseJSON objectForKey:@"authRequired"]) {
-            NSString* authRequired = (NSString*) [response.responseJSON objectForKey:@"authRequired"];
-            return [authRequired boolValue];
+        if ([response.responseJSON objectForKey:@"authStatus"] != nil) {
+            return true;
         }
     }
-    
     return false;
 }
 
 -(void) handleChallenge:(WLResponse *)response {
-    NSLog(@"A login form should appear");
-    if([self.vc.navigationController.visibleViewController isKindOfClass:[LoginViewController class]]){
-        dispatch_async(dispatch_get_main_queue(), ^(void){
-            LoginViewController*  loginController = (LoginViewController*) self.vc.navigationController.visibleViewController;
-            loginController.errorMsg.hidden = NO;
-        });
+    NSString* authStatus = (NSString*) [response.responseJSON objectForKey:@"authStatus"];
+    
+    if([authStatus isEqual:@"complete"]){
+        [self.vc.navigationController popViewControllerAnimated:YES];
+        [self submitSuccess:response];
     }
+    
     else{
-        [self.vc performSegueWithIdentifier:@"showLogin" sender:self.vc];
-        dispatch_async(dispatch_get_main_queue(), ^(void){
-            LoginViewController*  loginController = (LoginViewController*) self.vc.navigationController.visibleViewController;
-            loginController.challengeHandler = self;
-            loginController.errorMsg.hidden = YES;
-        });
+        NSLog(@"A login form should appear");
+        // Check if login form is already visible
+        if([self.vc.navigationController.visibleViewController isKindOfClass:[LoginViewController class]]){
+            dispatch_async(dispatch_get_main_queue(), ^(void){
+                LoginViewController*  loginController = (LoginViewController*) self.vc.navigationController.visibleViewController;
+                loginController.errorMsg.hidden = NO;
+            });
+        }
+        else{
+            [self.vc performSegueWithIdentifier:@"showLogin" sender:self.vc];
+            dispatch_async(dispatch_get_main_queue(), ^(void){
+                LoginViewController*  loginController = (LoginViewController*) self.vc.navigationController.visibleViewController;
+                loginController.challengeHandler = self;
+                loginController.errorMsg.hidden = YES;
+            });
+        }
     }
 }
 
